@@ -27,12 +27,6 @@ body {
   background-color: #F1C376 ;
   display: block ;
   position: relative ;
-  flex-direction: row ;
-    flex-wrap: wrap ;
-    justify-content: center ;
-    align-items: stretch ;
-    box-sizing: border-box ;
-  top: 4px ;
   z-index: 1 ;
   
     

@@ -1,0 +1,61 @@
+
+.grid-container1 {
+    display: grid;
+    grid-template-areas: "pic4"
+                         "name";
+    grid-gap: 0px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(auto,auto);
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: bisque;
+    padding: 5px;
+  }
+  
+  .pic4 {
+    grid-area: pic4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .name {
+    grid-area: name;
+  }
+  
+  .name {
+    font-family: bladley hand, cursive ;
+    font-size: 13px ;
+    color: #24481a;
+    text-align: center;
+  }
+
+  body {
+    background-color: #FFF4F4;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-areas: "act act act"
+                         "filly CSTUfirst soon";
+    grid-gap: 0px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto,auto);
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: bisque;
+    padding: 5px;
+  }
+
+  .act {
+    grid-area: act;
+  }
+
+  .filly {
+    grid-area: filly;
+  }
+
+  .CSTUfirst {
+    grid-area: CSTUfirst;
+  }
+
