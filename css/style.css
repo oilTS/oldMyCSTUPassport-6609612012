@@ -3,56 +3,105 @@ body {
   padding: 0;
 }
 
+.grid {
+  border: 0px solid #c7da68;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas: "header header header"
-                       "about pic1 purpose"
-                       "blank1 video pic2"
-                       "blank1 vdo1 pic2"
+                       "about  purpose pic1"
+                       "blank1 video video"
+                       "blank1 vdo1 vdo1"
                        "footer footer footer" ;
   grid-gap: 0px;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(10,160px);
+  grid-template-rows: repeat(10,auto);
+  column-gap: 5px;
+  row-gap: 5px;
   background-color: bisque;
+  padding: 5px;
 }
 
 .header {
   grid-area: header;
+  background-color: #F1C376 ;
+  font-family: Arial, Helvetica, sans-serif ; font-size: 18px ;
+  display: block ;
+  position: relative ;
+  top: 4px ;
+  z-index: 1 ;
+  margin-left: 10px ;
+    
 }
 .about {
   grid-area: about;
+  padding-left: 10px;
+  background-color: #F7E6C4;
+  
 }
 .pic1 {
   grid-area: pic1;
+  
 }
 .purpose {
   grid-area: purpose;
+  background-color: #F7E6C4;
 }
 .blank1 {
   grid-area: blank1;
+  background-color: #F7E6C4;
 }
 .video {
   grid-area: video;
+  background-color: #F7E6C4;
 }
 .vdo1 {
   grid-area: vdo1;
-}
-.pic2 {
-  grid-area: pic2;
+  
 }
 .footer {
   grid-area: footer;
 }
 
-.grid {
-  border: 1px solid #0f0e0e;
-}
-
-img {
+.img1 {
   float: left ;
   border-radius: 50% ;
-  margin-right: 15px ;
+  margin-right: 35px ;
   position : relative ;
   z-index: 2 ;
 }
- 
+
+.pic1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pic3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vdo1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mark {
+  background-color: #ebdcc9 ;
+  color: #473c35 ;
+}
+
+h2 {
+  text-align: center;
+}
+
+.text1 {
+  padding-top: 15px;
+  font-family: Times New Roman, Times, serif ;
+  font-size: 18px ;
+  color: #123d07;
+}
