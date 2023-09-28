@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header"
+                       "about pic1 purpose"
+                       "blank1 video pic2"
+                       "blank1 vdo1 pic2"
+                       "footer footer footer" ;
+  grid-gap: 0px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(10,160px);
+  background-color: bisque;
+}
+
+.header {
+  grid-area: header;
+}
+.about {
+  grid-area: about;
+}
+.pic1 {
+  grid-area: pic1;
+}
+.purpose {
+  grid-area: purpose;
+}
+.blank1 {
+  grid-area: blank1;
+}
+.video {
+  grid-area: video;
+}
+.vdo1 {
+  grid-area: vdo1;
+}
+.pic2 {
+  grid-area: pic2;
+}
+.footer {
+  grid-area: footer;
+}
+
+.grid {
+  border: 1px solid #0f0e0e;
+}
+
+img {
+  float: left ;
+  border-radius: 50% ;
+  margin-right: 15px ;
+  position : relative ;
+  z-index: 2 ;
+}
+ 
