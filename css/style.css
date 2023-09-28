@@ -4,21 +4,20 @@ body {
 }
 
 .grid {
-  border: 0px solid #c7da68;
+  border: 0px solid #c4cd95;
 }
 
 .grid-container {
   display: grid;
   grid-template-areas: "header header header"
-                       "about  purpose pic1"
+                       "about  about purpose "
                        "blank1 video video"
-                       "blank1 vdo1 vdo1"
-                       "footer footer footer" ;
+                       "blank1 vdo1 vdo1";
   grid-gap: 0px;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(10,auto);
-  column-gap: 5px;
-  row-gap: 5px;
+  grid-template-rows: repeat(auto,auto);
+  column-gap: 10px;
+  row-gap: 10px;
   background-color: bisque;
   padding: 5px;
 }
@@ -26,35 +25,39 @@ body {
 .header {
   grid-area: header;
   background-color: #F1C376 ;
-  font-family: Arial, Helvetica, sans-serif ; font-size: 18px ;
   display: block ;
   position: relative ;
+  flex-direction: row ;
+    flex-wrap: wrap ;
+    justify-content: center ;
+    align-items: stretch ;
+    box-sizing: border-box ;
   top: 4px ;
   z-index: 1 ;
-  margin-left: 10px ;
+  
     
 }
 .about {
   grid-area: about;
   padding-left: 10px;
-  background-color: #F7E6C4;
+  background-color: #F1C376;
   
 }
 .pic1 {
   grid-area: pic1;
-  
+  background-color: #F1C376;
 }
 .purpose {
   grid-area: purpose;
-  background-color: #F7E6C4;
+  background-color: #F1C376;
 }
 .blank1 {
   grid-area: blank1;
-  background-color: #F7E6C4;
+  
 }
 .video {
   grid-area: video;
-  background-color: #F7E6C4;
+  background-color: #F1C376;
 }
 .vdo1 {
   grid-area: vdo1;
@@ -82,6 +85,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .vdo1 {
@@ -91,17 +95,43 @@ body {
 }
 
 mark {
-  background-color: #ebdcc9 ;
-  color: #473c35 ;
+  background-color: #d2dbb5 ;
 }
 
 h2 {
   text-align: center;
+  padding-top: 10px;
+  font-family: bladley hand, cursive ;
+  font-size: 18px ;
+  color: #24481a;
 }
 
 .text1 {
-  padding-top: 15px;
-  font-family: Times New Roman, Times, serif ;
+  font-family: bladley hand, cursive ;
   font-size: 18px ;
-  color: #123d07;
+  color: #24481a;
+}
+
+.text2 {
+  padding-top: 5px;
+  font-family: bladley hand, cursive ;
+  font-size: 16px ;
+  color: #24481a;
+}
+
+.text3 {
+  font-family: bladley hand, cursive ;
+  font-size: 16px ;
+  color: #24481a;
+}
+
+.span1 {
+  font-family: bladley hand, cursive ;
+  color: #24481a;
+}
+
+.span2 {
+  font-family: bladley hand, cursive ;
+  font-size: 20px;
+  color: #24481a;
 }
