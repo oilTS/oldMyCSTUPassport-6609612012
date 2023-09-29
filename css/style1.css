@@ -31,7 +31,7 @@
   }
 
   body {
-    background-color: #FFF4F4;
+    background-color: #F7E6C4;
   }
 
   .grid-container2 {
@@ -43,7 +43,7 @@
     grid-template-rows: repeat(auto,auto);
     column-gap: 10px;
     row-gap: 10px;
-    background-color: bisque;
+    background-color: #F1C376;
     padding: 5px;
   }
 
@@ -59,3 +59,39 @@
     grid-area: CSTUfirst;
   }
 
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+
+  .grid {
+    border: 3px solid #8f9a5b;
+  }
+
+
+  .grid-container3 {
+    display: grid;
+    grid-template-areas: "acti acti "
+                         "pic5 textpic5";
+    grid-gap: 0px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,auto);
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: #F1C376;
+    padding: 5px;
+  }
+
+  .acti {
+    grid-area: acti;
+  }
+
+  .pic5 {
+    grid-area: pic5;
+  }
+
+  .textpic5 {
+    grid-area: textpic5;
+  }
