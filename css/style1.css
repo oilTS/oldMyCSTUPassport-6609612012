@@ -95,3 +95,15 @@
   .textpic5 {
     grid-area: textpic5;
   }
+
+  h1 {
+    font-family: bladley hand, cursive ;
+  font-size: 20px;
+  color: #24481a;
+  }
+
+  h3 {
+    font-family: bladley hand, cursive ;
+  font-size: 20px;
+  color: #24481a;
+  }
